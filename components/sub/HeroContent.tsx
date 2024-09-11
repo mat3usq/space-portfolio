@@ -11,8 +11,8 @@ const HeroContent = () => {
 		<motion.div
 			initial="hidden"
 			animate="visible"
-			className="flex flex-row items-center justify-center px-20 mt-20 w-full z-[20]">
-			<div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
+			className="flex flex-row items-center justify-center px-20 mt-32 w-full z-[20]">
+			<div className="h-full w-full flex flex-col gap-5 justify-start m-auto text-start">
 				<motion.div
 					variants={slideInFromTop}
 					className="Welcome-box py-[8px] px-[12px] border border-[#7042f88b] opacity-[0.9]">
@@ -53,8 +53,15 @@ const HeroContent = () => {
 				</motion.a>
 			</div>
 
-			<motion.div variants={slideInFromRight(0.8)} className="w-full h-full flex justify-center items-center">
-				<Image src="/mainIconsDark.svg" alt="work icons" height={650} width={650} />
+			<motion.div
+				variants={slideInFromRight(0.8)}
+				className="w-full h-full flex flex-wrap justify-center items-center gap-16">
+				<Image src="/computer.svg" alt="work icons" height={120} width={120} />
+				<Image src="/code.svg" alt="work icons" height={100} width={100} />
+				<Image src="/manProgramming.svg" alt="work icons" height={120} width={120} />
+				<Image src="/cloud.svg" alt="work icons" height={120} width={120} />
+				<Image src="/user.svg" alt="work icons" height={120} width={120} />
+				<Image src="/manThinking.svg" alt="work icons" height={100} width={100} />
 			</motion.div>
 		</motion.div>
 	)
