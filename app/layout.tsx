@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import StarsCanvas from '@/components/main/StarsBackground'
+import Skills from '@/components/main/Skills'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,6 +21,7 @@ export default function RootLayout({
 			<body className={`${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden`}>
 				{children}
 				<StarsCanvas />
+				<Skills />
 			</body>
 		</html>
 	)
