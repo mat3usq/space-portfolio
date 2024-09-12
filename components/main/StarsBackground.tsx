@@ -8,7 +8,7 @@ import { damp3 } from 'maath/easing'
 
 const StarBackground = (props: any) => {
 	const ref = useRef<any>(null)
-	const positions = random.inSphere(new Float32Array(7777), { radius: 1.2 })
+	const positions = random.inSphere(new Float32Array(5000), { radius: 1.2 })
 
 	useFrame((state, delta) => {
 		if (ref.current) {

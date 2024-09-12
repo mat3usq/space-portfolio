@@ -6,8 +6,8 @@ import SkillsText from '../sub/SkillsText'
 const Skills = () => {
 	return (
 		<section
-			className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden pb-80 py-32"
-			style={{ transform: 'scale(0.9)' }}>
+			id="skills"
+			className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden pb-20 pt-36">
 			<SkillsText />
 
 			<div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">

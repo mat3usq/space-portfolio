@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import StarsCanvas from '@/components/main/StarsBackground'
 import Skills from '@/components/main/Skills'
+import Projects from '@/components/main/Projects'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,6 +23,7 @@ export default function RootLayout({
 				{children}
 				<StarsCanvas />
 				<Skills />
+				<Projects />
 			</body>
 		</html>
 	)
